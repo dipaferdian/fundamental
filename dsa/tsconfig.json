@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "rootDir": "./basic-math",
+    "rootDir": "math",
     "outDir": "./dist"
   },
-   "include": ["basic-math/**/*"]
+  "include": ["math/**/*"]
 }
