@@ -1,66 +1,34 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Teknologi Saya</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <h1>TechNesia</h1>
-      <p>Jendela Informasi Teknologi Terkini</p>
-    </header>
+    <div class="container">
+      <nav class="container__navbar">
+        <div class="container__navbar--featured container__navbar--first">
+          <a href="http://">nav1</a>
+          <a href="http://">nav2</a>
+        </div>
+        <div class="container__navbar--featured container__navbar--second">
+          <a href="http://">nav3</a>
+          <a href="http://">nav4</a>
+        </div>
+      </nav>
 
-    <nav class="main-nav">
-      <ul>
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#">Artikel</a></li>
-        <li><a href="#">Tutorial</a></li>
-        <li><a href="#">Tentang Kami</a></li>
-      </ul>
-    </nav>
+      <aside class="container__sidebar">Sidebar</aside>
 
-    <main class="container">
-      <article class="main-article">
-        <header>
-          <h2>Mengenal HTML Semantik dan Manfaatnya</h2>
-          <p class="meta-data">
-            Ditulis oleh <strong>Budi</strong> pada 10 Juni 2026
-          </p>
-        </header>
-
-        <section class="content-section">
-          <h3>Apa itu HTML Semantik?</h3>
-          <p>
-            HTML semantik adalah penggunaan tag HTML yang sesuai dengan tujuan
-            dan elemen konten tersebut. Dibandingkan menggunakan tag &lt;div&gt;
-            berulang kali, kita menggunakan elemen yang memiliki makna.
-          </p>
-        </section>
-
-        <section class="content-section">
-          <h3>Mengapa ini penting?</h3>
-          <p>
-            Mesin pencari seperti Google dapat membaca struktur halaman dengan
-            lebih baik. Selain itu, pengguna dengan keterbatasan penglihatan
-            yang menggunakan pembaca layar (screen reader) akan sangat terbantu.
-          </p>
-        </section>
-      </article>
-
-      <aside class="sidebar">
-        <h3>Artikel Populer</h3>
-        <ul>
-          <li><a href="#">Cara Belajar CSS Grid</a></li>
-          <li><a href="#">Apa itu JavaScript?</a></li>
-          <li><a href="#">Tips Menjadi Frontend Developer</a></li>
-        </ul>
-      </aside>
-    </main>
-
-    <footer class="site-footer">
-      <p>&copy; 2026 TechNesia. Dibuat dengan HTML Semantik.</p>
-    </footer>
+      <div class="container__content">
+        <div class="content__item content__item--first">item1</div>
+        <div class="content__item">item2</div>
+        <div class="content__item">item3</div>
+        <div class="content__item">item4</div>
+        <div class="content__item">item5</div>
+        <div class="content__item">item6</div>
+      </div>
+    </div>
   </body>
 </html>
