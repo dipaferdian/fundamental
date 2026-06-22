@@ -3,5 +3,17 @@
     "rootDir": "math",
     "outDir": "./dist"
   },
-  "include": ["math/**/*"]
+  "include": [
+    "math/**/*",
+    "calculate-circumference.js",
+    "calculate-triangel-area.js",
+    "count-digit.js",
+    "even-number.js",
+    "fizz-buzz.js",
+    "multiply-three.js",
+    "prime-number.js",
+    "reverse-number.js",
+    "subtract-numbers.js",
+    "two-sum.js"
+  ]
 }
