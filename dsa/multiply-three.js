@@ -9,4 +9,4 @@ function compute(arr) {
   return result;
 }
 
-console.log(compute([1, 2]));
+console.log(compute([1, 2, 3]));

@@ -13,4 +13,4 @@ function compute(number) {
   return count;
 }
 
-console.log(compute(123));
+console.log(compute(1234));

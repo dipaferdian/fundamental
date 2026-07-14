@@ -4,7 +4,6 @@ function compute(number) {
 
   while (latestNumber != 0) {
     const modulus = latestNumber % 10;
-    const multiple = (0 * 10) / modulus;
 
     result += modulus.toString();
 
