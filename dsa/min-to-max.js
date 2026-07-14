@@ -15,4 +15,4 @@ function compute(arr) {
   return hasil;
 }
 
-console.log(compute([8, 3, 1, 7, 0, 10, 2]));
+console.log(compute([8, 3, 1]));
