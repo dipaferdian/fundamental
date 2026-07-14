@@ -9,8 +9,6 @@ class LinkedList {
   constructor() {
     this.head = null;
     this.size = 0;
-    this.middleValue = 0;
-    this.isNull = false;
   }
 
   // 1. Insert at the beginning (Prepend)
@@ -40,19 +38,19 @@ class LinkedList {
   }
 
   findMiddle() {
-    let lambat = this.head;
-    let cepat = this.head;
+    let moveOneStep = this.head;
+    let moveTwoStep = this.head;
 
-    while (cepat?.next) {
-      cepat = cepat?.next?.next;
-      lambat = lambat.next;
+    while (moveTwoStep?.next) {
+      moveTwoStep = moveTwoStep?.next?.next;
+      moveOneStep = moveOneStep.next;
     }
 
-    if (lambat == null && this.head) {
-      lambat = this.head;
+    if (moveOneStep == null && this.head) {
+      moveOneStep = this.head;
     }
 
-    return lambat.value;
+    return moveOneStep.value;
   }
 
   // 3. Remove at a specific index
