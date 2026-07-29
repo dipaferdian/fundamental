@@ -95,8 +95,7 @@ const list = new LinkedList();
 list.insertLast(1);
 list.insertLast(2);
 list.insertLast(3);
-list.insertLast(4);
-list.insertLast(5);
-list.insertLast(6);
 
-console.log("middle", list.findMiddle());
+list.removeAt(1);
+
+list.printList();
