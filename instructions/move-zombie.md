@@ -1,5 +1,3 @@
-Semangat pantang menyerah yang luar biasa! Mari kita hadapi teka-teki Tahap 1 berikutnya.
-
 Jika sebelumnya kamu mengelola batasan kapasitas (air) dan batasan penumpukan waktu (jembatan), kali ini kita akan mengelola **Batasan Kondisional (Conditional Constraint)**. Dalam pemrograman, ini melatih logikamu dalam membuat perintah `IF - ELSE` yang sangat ketat agar programmu tidak _crash_ atau menghasilkan _error_ fatal.
 
 ### 🧟 Teka-teki: 3 Penjelajah dan 3 Zombie

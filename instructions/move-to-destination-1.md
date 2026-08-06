@@ -1,4 +1,4 @@
-Siap! Mari kita kembali melatih otot logikamu di **Tahap 1 (Dekomposisi & Pelacakan Status)**.
+**Tahap 1 (Dekomposisi & Pelacakan Status)**.
 
 Teka-teki kali ini sangat bagus untuk melatih instingmu terhadap **Kondisi Bersyarat (_If/Else Condition_)** dan **Batasan (_Constraints_)** di dunia pemrograman.
 

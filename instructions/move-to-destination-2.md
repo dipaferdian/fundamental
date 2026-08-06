@@ -1,5 +1,3 @@
-Siap! Semangat yang luar biasa. Mari kita selesaikan teka-teki **Menyeberangi Jembatan Rapuh** yang sempat tertunda sebelumnya.
-
 Teka-teki ini sangat bagus untuk melatih bagaimana kamu mengoptimalkan waktu (dalam pemrograman, ini melatih kepekaanmu terhadap efisiensi _Time Complexity_).
 
 Sebagai pengingat, berikut adalah dekomposisi variabel dan batasannya:
