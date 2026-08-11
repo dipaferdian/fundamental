@@ -1,12 +1,3 @@
-/*
-karena ini data array yang urutan nya acak, 
-dan mengitung dari 2 element, menggunakan algoritma linear search dengan has map untuk mencari element nya,
-dan data struktur array untuk menyimpan hasil datanya
-
-time complexity O(n) = iterasi element secara linear search
-space complexity O(n) = menyimpan jumlah data partner sebanyak input
-*/
-
 function compute(input, target) {
   const partner = new Map();
   let inputSize = input.length;
