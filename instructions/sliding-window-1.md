@@ -24,10 +24,12 @@ Lalu geser lagi jendelanya ke kanan, kurangi angka paling kiri yang ditinggalkan
 Terjemahkan konsep "Jendela Geser" ini ke dalam _Pseudocode_-mu.
 _(Hint tambahan: Kamu butuh melakukan iterasi yang dimulai dari indeks ke-3, karena jendela pertamanya sudah dihitung di awal)._
 
-1.  variable windowSum = 0, day = 3, maxSum = windowSum
-2.  perulangan index < day
-3.                 windowSum += array[index]
-4.  perulangan variable right = day; right < arr.length; right++
-5.                  windowSum += array[right] dan windowSum -= array[right - day]
-6.                  maxSum = Math.max(maxSum, windowSum);
-7.  return max Sum
+1.  buat 3 variable maxSum = windowSum, day = 3, windowSum = 0
+2.  lakukan iterasi dimulai dari index 0 sampai ke day
+3.        jumlahkan isi setiap element ke windowSum
+4.  definisikan variable maxSum = windowSum
+5.  lakukan iterasi dimulai dari index day sampai ke daftar penjualan
+6.        jumlahkan isi setiap element ke windowSum
+7.        kurangi isi setiap element ke windowSum, element nya berdasarkan index - day
+8.        simpan berdasarkan perbandingan nilai yang paling besar dari maxSum dan windowSum
+9.  return maxSum
