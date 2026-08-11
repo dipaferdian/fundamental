@@ -45,16 +45,3 @@ const array = [10, 20, 30, 40, 50];
 const target = 20;
 
 console.log(compute2(array, target, array.length, 0));
-
-/* 
-1. membuat 3 variable middle, low dan high
-2. nilai awal low di isi dengan 0, sebagai titik awal
-3. nilai awal high di isi dengan panjang array dikurangi 1
-4. lakukan pengecekan berulang deng membandingkan apakah nilai high lebih besar dari atau sama dengan nilai low
-5. nilia middle di isi dengan menambahkan nilai low kemudian ditambah dengan (high - low) / 2
-6. kondisi jika posisi nya sudah seesuai dengan target, maka kembalikan nilai nya dan selesai.
-7. jika posisi array[middle] lebih besar dari target maka nilai high dikurangi (middle - 1)
-8. jika posisi array[middle] kurang dari target maka nilai low di tambah (middle + 1)
-9. jika target tidak di temukan, maka kembalikan -1.
-10. selesai.
-*/
