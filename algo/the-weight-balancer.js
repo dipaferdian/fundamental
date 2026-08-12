@@ -76,9 +76,13 @@ function compute(input, target) {
       return [leftPointer, rightPointer];
     }
 
-    leftPointer++;
-    rightPointer--;
+    if (sum > target) {
+      rightPointer--;
+    } else {
+      leftPointer++;
+    }
   }
 }
 
 console.log(compute([2, 3, 5, 8, 11, 15], 10));
+console.log(compute([2, 7, 11, 15], 9));
