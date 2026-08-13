@@ -67,6 +67,21 @@ Tulis *query* `SELECT` dari tabel `daily_sales` yang menghasilkan 3 kolom beriku
 Silakan tulis *query* untuk Tahap 1 ini. Jika *projection*-nya sempurna, kita akan bungkus ke dalam CTE untuk memfilternya!
 */
 
+select * from daily_sales
+
+# step 1
+SELECT a.id as original_id, a.sale_date as original_sale_date, a.revenue as original_revenue, b.*
+FROM daily_sales as a JOIN daily_sales b ON a.sale_date = b.sale_date + 1
+
+# step 2
+SELECT a.sale_date
+FROM daily_sales as a JOIN daily_sales b ON a.sale_date = b.sale_date + 1
+where a.revenue > b.revenue
+
+/*
+ optimization
+*/
+
 # step 1
 select sale_date, revenue, LAG(revenue, 1) OVER (ORDER BY sale_date) as prev_day_revenue from daily_sales
 
@@ -76,5 +91,3 @@ with sales_projection as (
 )
 SELECT sale_date from sales_projection
 where revenue > prev_day_revenue
-
-
