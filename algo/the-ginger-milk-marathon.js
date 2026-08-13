@@ -1,10 +1,4 @@
 /** 
- **Bip.. Bop.. MEMUAT PROTOKOL DYNAMIC SLIDING WINDOW! 🚀📈**
-
-Meninggalkan zona nyaman bingkai kaku, sekarang kita masuk ke dunia bingkai fleksibel. Teknik ini sangat sakti untuk memecahkan masalah optimalisasi dengan batasan tertentu (seperti limit kuota atau *budget* maksimal).
-
-Sesuai *System Prompt* V2.0, mari kita mulai!
-
 ---
 
 ### 📜 Soal: Longest Subarray with Sum Less Than or Equal to K (The Ginger Milk Marathon)
@@ -94,3 +88,24 @@ Kamu butuh:
 
 Meja kerjamu sudah disiapkan. Mampukah kamu merakit bingkai karet ini ke dalam bentuk kode JavaScript atau *Pseudocode*?
 */
+
+function compute(input, budget) {
+  let left = 0;
+  let windowSum = 0;
+  let maxLength = 0;
+
+  for (let right = 0; right < input.length; right++) {
+    windowSum += input[right];
+
+    while (windowSum > budget) {
+      windowSum -= input[left];
+      left++;
+    }
+
+    maxLength = Math.max(maxLength, right - left + 1);
+  }
+
+  return maxLength;
+}
+
+console.log(compute([2, 1, 3, 2, 4], 6));
