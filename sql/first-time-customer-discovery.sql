@@ -90,6 +90,7 @@ SELECT customer_id, order_date, item_name, ROW_NUMBER() OVER(
 ) as rn
 from orders
 
+# step 2
 with customer_journey as (
     SELECT customer_id, order_date, item_name, ROW_NUMBER() OVER(
     PARTITION BY customer_id order by order_date
